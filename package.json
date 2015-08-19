@@ -1,9 +1,9 @@
 {
-  "author": "Aaron Latham-Anderson <aaron@catch.co.nz>",
-  "name": "content-portal-ss",
+  "author": "DJ 'gold standard' West <dan@catch.co.nz>",
+  "name": "ss_template",
   "version": "0.0.1",
   "license": "Contributor License Agreement",
-  "repository": "git@gl.catch.co.nz:2degrees/content-portal-ss.git",
+  "repository": "git@github.com:djwestuk/ss_template.git",
   "dependencies": {},
   "devDependencies": {
     "chalk": "^0.5.1",
