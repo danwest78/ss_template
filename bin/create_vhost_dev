@@ -12,10 +12,10 @@ fi
 echo "
 <VirtualHost *:80>
 
-   ServerName  ss_tempate.loc
-   ServerAlias www.ss_tempate.loc
-   ServerAlias ss_tempate.*.xip.io
-   ServerAlias www.ss_tempate.*.xip.io
+   ServerName  ss_template.loc
+   ServerAlias www.ss_template.loc
+   ServerAlias ss_template.*.xip.io
+   ServerAlias www.ss_template.*.xip.io
 
    DocumentRoot $DIR/public
 
@@ -34,8 +34,8 @@ echo "
 " | sudo tee -a $VHOST
 
 echo "
-### START-ss_tempate ###
-127.0.0.1 ss_tempate.loc
-127.0.0.1 www.ss_tempate.loc
-### END-ss_tempate ###
+### START-ss_template ###
+127.0.0.1 ss_template.loc
+127.0.0.1 www.ss_template.loc
+### END-ss_template ###
 " | sudo tee -a /etc/hosts
