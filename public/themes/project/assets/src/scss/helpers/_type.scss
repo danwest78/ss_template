@@ -19,18 +19,18 @@
 //     font-style: normal;
 // }
 
-// %font-primary {
-//   font-family: $font-primary;
-//   /* Not Better Font Rendering =========== */
-//     -webkit-font-smoothing: auto;
-//     -moz-osx-font-smoothing: auto;
-//   text-rendering: auto;
-// }
+%font-primary {
+  font-family: $font-primary;
+  /* Not Better Font Rendering =========== */
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  text-rendering: auto;
+}
 
-// %font-secondary {
-//   font-family: $font-secondary;
-//   /* Better Font Rendering =========== */
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
-//   text-rendering: optimizeLegibility;
-// }
+%font-secondary {
+  font-family: $font-secondary;
+  /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
