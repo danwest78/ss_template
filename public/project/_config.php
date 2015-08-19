@@ -85,23 +85,6 @@ i18n::set_locale('en_NZ');
 ini_set("date.timezone","Pacific/Auckland");
 
 
-// --------------------------------------------
-// Prevent the public site from loading jquery / admin panel css
-// -------------------------------------------
-
-RequirementsHelper::require_block(array(
-    'framework/thirdparty/jquery/jquery.js',
-    'admin-panel/js/build/admin-panel.js',
-    'admin-panel/css/css.css',
-    '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
-    '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
-));
-
-// let the cms load its preferred version of jquery
-LeftAndMainHelper::require_unblock(array(
-    'framework/thirdparty/jquery/jquery.js'
-));
-
 // -------------------------------------------
 // HTML editor config
 // -------------------------------------------
