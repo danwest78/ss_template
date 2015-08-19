@@ -1,0 +1,19 @@
+{
+  "name": "2degrees/ss_template",
+  "version": "0.0.1",
+  "authors": [
+    "DJ 'gold standard' West <dan@catch.co.nz>"
+  ],
+  "license": "Contributor License Agreement",
+  "private": true,
+  "dependencies": {
+    "html5-boilerplate" : "~5.1.0",
+    "normalize-scss"    : "~3.0.2",
+    "neat"              : "~1.7.2",
+    "bourbon"           : "~4.2.1",
+    "jquery"            : "~1.11.2"
+  },
+  "resolutions": {
+    "jquery": "~1.11.2"
+  }
+}

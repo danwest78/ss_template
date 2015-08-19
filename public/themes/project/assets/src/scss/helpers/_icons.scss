@@ -1,0 +1,40 @@
+// [class*="icon-"], .icon {
+// 	&:before, &:after {
+// 		font-family: "icomoon";
+// 		speak: none;
+// 		font-style: normal;
+// 		font-weight: normal;
+// 		font-variant: normal;
+// 		text-transform: none;
+// 		line-height: 1;
+
+// 		// Better Font Rendering =========== */
+// 		-webkit-font-smoothing: antialiased;
+// 		-moz-osx-font-smoothing: grayscale;
+// 	}
+// }
+
+
+// $icons:
+// ("be-the-inspiration"		"\e605")
+// ("chev-down"				"\e600")
+// ("cross" 					"\e601")
+// ("search" 					"\e602")
+// ("burger" 					"\e603")
+// ("logo" 					"\e604")
+// ("facebook" 				"\e678")
+// ("twitter"					"\e61b")
+// ("youtube" 					"\e609")
+// ("instagram"				"\e619");
+
+
+// @each $val in $icons {
+// 	$name: nth($val, 1);
+// 	$content: nth($val, 2);
+
+// 	.icon-#{$name} {
+// 		&:before {
+// 			content: $content;
+// 		}
+// 	}
+// }

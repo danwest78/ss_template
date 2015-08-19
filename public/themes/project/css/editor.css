@@ -1,0 +1,11 @@
+/*
+This file is pulled in by the wysiwyg editor and defines helper classes when editing
+
+The only reason we are putting this here is so that we don't have to configure
+theme dependent stuff in the PHP project. We could do away with this linking
+file by addding the following config into the project _config.php file:
+
+HtmlEditorConfig::get('cms')->setOption('ContentCSS', project() . '/css/editor.css');
+*/
+
+@import '../assets/build/css/editor.css';

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Such sudo passwords are required..."
+
+sudo chmod -R 777 "$DIR/../public/assets/"
+sudo chown -R $(whoami) "$DIR/../public/assets/"
+
+rsync -avz --progress --delete --exclude='tiles/*' root@ss_tempate-prod.co.nz:/var/www/nzoc001_production/shared/public/assets/ "$DIR/../public/assets/"
+ssh root@ss_tempate-prod.co.nz "mysqldump -u ss_tempate_prod -pd36f2b812e646d12e6469cb2cb2feafff2b8fead ss_tempate_prod --verbose --single-transaction -CceKq | bzip2 -c" | bunzip2 -c | mysql -u nzoc001_dev -p12e646d36d9cb2cb2feafff2b8feaff2b812e646 nzoc001_dev
+
+sudo chmod -R 777 "$DIR/../public/assets/"
+sudo chown -R www-data "$DIR/../public/assets/"
+
+"$DIR/../public/framework/sake" dev/build flush=1
+"$DIR/www-dev-build"

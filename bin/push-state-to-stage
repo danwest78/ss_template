@@ -1,0 +1,9 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+rsync -avz --progress --delete --exclude='tiles/*' "$DIR/../public/assets/" root@ss_tempate-stage.co.nz:/var/www/ss_tempate_staging/shared/public/assets/
+mysqldump -u ss_tempate_dev -p12e646d36d9cb2cb2feafff2b8feaff2b812e646 ss_tempate_dev --verbose --single-transaction -CceKq | bzip2 -c | ssh root@ss_tempate-stage.co.nz "bunzip2 -c | mysql -u ss_tempate_stage -pd36f2b812e646d12e6469cb2cb2feafff2b8fead ss_tempate_stage"
+ssh root@ss_tempate-stage.co.nz "sudo chmod -R 775 /var/www/ss_tempate_staging/shared/public/assets/"
+ssh root@ss_tempate-stage.co.nz "bash /var/www/ss_tempate_staging/current/public/framework/sake dev/build flush=1"
+ssh root@ss_tempate-stage.co.nz "bash /var/www/ss_tempate_staging/current/bin/www-dev-build"

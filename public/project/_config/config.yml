@@ -1,0 +1,19 @@
+---
+Name: project
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'project'
+Replicant:
+  protocols:
+    https: https
+    http: http
+  remote_hosts:
+    ss_template-stage.catch.co.nz: "Staging"
+    ss_template-prod.catch.co.nz: "Production"
+  proxies: []

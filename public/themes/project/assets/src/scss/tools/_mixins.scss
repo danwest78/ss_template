@@ -1,0 +1,14 @@
+// Omega reset for neat
+@mixin omega-reset($nth: null, $cols: null) {
+  	@if ($nth and $cols) {
+		&:nth-child(#{$nth}) { margin-right: flex-gutter($cols); }
+	    &:nth-child(#{$nth}+1) { clear: none }
+  	}
+  	@else if ($nth) {
+	    &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+	    &:nth-child(#{$nth}+1) { clear: none }
+  	} @else {
+	    & { margin-right: flex-gutter(); }
+	    & { clear: none }
+  	}
+}

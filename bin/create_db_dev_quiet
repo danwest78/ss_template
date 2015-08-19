@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "CREATE DATABASE IF NOT EXISTS ss_tempate_dev;
+GRANT ALL ON ss_tempate_dev.* TO 'ss_tempate_dev'@'localhost' IDENTIFIED BY '12e646d36d9cb2cb2feafff2b8feaff2b812e646';
+FLUSH PRIVILEGES;" | mysql --host 127.0.0.1 --port 3306 -u root

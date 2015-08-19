@@ -1,0 +1,26 @@
+staging:
+  send_all_mail_to: dev@catch.co.nz
+  allow_from: 121.98.115.114 121.73.19.202 49.227.122.210 49.226.104.160 202.174.181.32
+  broadband_iss: Catch Staging
+  domains:
+    deploy: rio2016-stage.catch.co.nz
+    server_name: rio2016-stage.catch.co.nz
+    server_aliases:
+      - www.rio2016-stage.catch.co.nz
+  db:
+    name: rio2016_stage
+    user: rio2016_stage
+    pass: 12e646d36d9cb2cb2feafff2b8feaff2b812e646
+
+production:
+  allow_from:
+  domains:
+    deploy: rio2016-prod.catch.co.nz
+    server_name: rio2016-prod.catch.co.nz
+    server_aliases:
+      - www.rio2016-prod.catch.co.nz
+      - rio2016.olympic.org.nz
+  db:
+    name: rio2016_prod
+    user: rio2016_prod
+    pass: d36f2b812e646d12e6469cb2cb2feafff2b8fead

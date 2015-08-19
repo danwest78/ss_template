@@ -1,0 +1,33 @@
+# Exclude SS modules - don't track any folders in the public dir
+/public/*/
+
+# explictly track the folders we want to track
+!/public/project
+!/public/themes
+!/public/silverstripe-cache
+!/public/assets
+
+# exclude generated files
+/log/*
+!/log/.keep
+/public/assets/*
+!/public/assets/.htaccess
+!/public/assets/replicant/.htaccess
+/public/silverstripe-cache/*
+!/public/silverstripe-cache/.keep
+/.bundle
+/.sass-cache
+/build
+/build-tmp
+/public/themes/project/assets/build
+.vagrant
+*.DS_Store
+
+# env config files
+_ss_environment.php
+
+# vendored files
+/vendor
+/public/themes/project/thirdparty
+/node_modules
+/broadband-tests/node_modules

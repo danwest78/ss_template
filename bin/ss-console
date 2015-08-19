@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# set current dir
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+export APPLICATION_ENV=$1 && php $DIR/../lib/boris.php

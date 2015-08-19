@@ -1,0 +1,44 @@
+body,
+input,
+textarea {
+	@extend %font-secondary;
+}
+
+body {
+	color: $text-body;
+}
+
+h1 {
+	@extend %font-primary;
+	color: $text-dark;
+	font-size: rem(54);
+	line-height: rem(45);
+	margin: 0 0 rem(24);
+	font-weight: normal;
+}
+
+h2 {
+	color: $text-darker;
+	font-weight: 500;
+	font-size: rem(24);
+	line-height: rem(30);
+	margin: rem(50) 0 rem(16);
+}
+
+p, ul, dl, dt {
+	font-size: rem(16);
+	line-height: rem(24);
+}
+
+p, ul {
+	margin: rem(16) 0;
+}
+
+a {
+	color: $text-link;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

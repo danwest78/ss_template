@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+sudo su -c "$DIR/../public/framework/sake dev/build flush=all" -s /bin/sh www-data
