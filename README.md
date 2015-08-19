@@ -1,4 +1,4 @@
-2degrees Content Portal
+Silverstripe template
 =======================
 
 ## Requirements
