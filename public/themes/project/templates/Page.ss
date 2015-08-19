@@ -88,7 +88,7 @@
 	<% include Header %>
 
 	<main role="main">
-			$Content
+        $Layout
 	</main>
 
 	<% include Footer %>
