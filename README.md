@@ -117,9 +117,10 @@ sudo apachectl restart
 echo "<?php
 define('APPLICATION_ENV', 'development');
 define('SS_DATABASE_CLASS', 'MySQLDatabase');
-define('SS_DATABASE_USERNAME', 'ss_template');
-define('SS_DATABASE_PASSWORD', '12e646d36d9cb2cb2feafff2b8feaff2b812e646');
+define('SS_DATABASE_USERNAME', 'root');
+define('SS_DATABASE_PASSWORD', '');
 define('SS_DATABASE_NAME', 'ss_template');
+define('SS_ENVIRONMENT_TYPE', 'dev');
 define('SS_DATABASE_SERVER', 'localhost');
 define('SS_DEFAULT_ADMIN_USERNAME', 'admin');
 define('SS_DEFAULT_ADMIN_PASSWORD', 'admin');
@@ -139,9 +140,9 @@ npm install
 
 ### 4. Run dev build
 
-````bash
-public/framework/sake dev/build flush=1
-````
+http://ss_template.loc/dev/build
+http://ss_template.loc?flush=all
+
 
 ### 5. Compile Assets
 
